@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-resert {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: calc((515 / 1200) * 100%);
+}
+
+.menu-list {
+    justify-content: space-between;
+}
+
+.menu-link {
+    font-size: 15px;
+    color: #030305;
+}
+
+.menu-link:hover {
+    border-bottom: 2px solid black;
+}
+
+/*first*/
+
+.first {
+    margin-bottom: 100px;
+    padding: 104px 0 154px;
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.first-container {
+    flex-direction: column;
+}
+
+.first-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    color: #030305;
+}
+
+.first-descr {
+    width: calc((502 / 1200) * 100%);
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #030305;
+}
+
+.first-btn {
+    width: calc((334 / 1200) * 100%);
+    padding: 20px 53px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #030305;
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.first-btn:hover {
+    cursor: pointer;
+    background-color: #575757;
+}
+
+/*second*/
+
+.second {
+    margin-bottom: 100px;
+}
+
+.sub-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 60px;
+    color: #030305;
+}
+
+.second-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.second-item img {
+    margin-bottom: 15px;
+}
+
+.second-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 40px;
+}
+
+.item-title {
+    margin: 0;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #030305;
+}
+
+.item-descr {
+    justify-content: space-around;
+    margin-bottom: 13px;
+}
+
+.item-img:hover {
+    transform: scale(1.1);
+}
+
+.item-img {
+    vertical-align: bottom;
+    transition: all 0.3s ease-in-out;
+}
+
+.one-title {
+    width: 110px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #030305;
+}
+
+.one-title-two {
+    width: 110px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #030305;
+}
+
+.item-descr-one, .item-descr-two, .item-descr-three {
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(100% / 3);
+}
+
+.item-btn {
+    width: 100%;
+    padding: 15px 122px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: #030305;
+}
+
+/*third*/
+
+.third {
+    overflow: hidden;
+}
+
+.title-third {
+    margin-bottom: 20px;
+}
+
+.third-form {
+    flex-direction: column;
+
+}
+
+.third-descr {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+}
+
+.third-form input {
+    box-sizing: border-box;
+    max-width: 344px;
+    margin-bottom: 15px;
+    padding: 22px 18px;
+    border: 1px solid #5D5D5F;
+    color: black;
+    outline: none;
+    font-size: 16px;
+}
+
+.third-form::placeholder input {
+    font-size: 16px;
+    color: #5D5D5F;
+}
+
+.form-btn {
+    width: 344px;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #030305;
+}
+
+.third-container {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price-image {
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+
+/*footer*/
+
+footer {
+    border-top: 1px solid #E5E5E5;
+}
+
+.footer-container {
+    min-height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #030305;
+}
